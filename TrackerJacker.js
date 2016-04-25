@@ -12,7 +12,7 @@
  * GNU General Public License for more details.
  * 
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * 
  * 
  * The goal of this script is to be an iniative tracker, that manages statuses,
  * effects, and durations.

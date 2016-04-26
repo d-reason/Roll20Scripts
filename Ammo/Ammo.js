@@ -60,7 +60,7 @@ var Ammo = Ammo || (function() {
 
 		if( playerIsGM(playerid) || valid ) {
 			attr.set({current: adj});
-            if(par<1){
+            if(par<1){ // Need check better ways to use parameter than that, but for now it works. Any par more than zero will turn off messaging 
 			sendMessage(
 				'<b>'+chr.get('name') + '</b> '+( (adj<val) ? 'uses' : 'gains' )+' '+Math.abs(amount)+' ammo and has '+adj+' remaining.',
 				(playerIsGM(playerid) ? 'gm' : false)
@@ -120,7 +120,7 @@ var Ammo = Ammo || (function() {
 
 	HandleInput = function(msg_orig) {
 		var msg = _.clone(msg_orig),
-			args,attr,amount,chr,token,text='',par;
+			args,attr,amount,chr,token,text='',par; // Handle API input. Sample input !ammo @{selected|token_id} Ammo -1 1
 
 		if (msg.type !== "api") {
 			return;

@@ -3012,12 +3012,14 @@ var TrackerJacker = (function() {
 		init: init,
 		registerAPI: registerAPI
 	};
+	 checkVersion = function() {    
+        log('-=> TrackerJacker v'+version+' <=-');}
  
 }());
 
 on("ready", function() {
 	'use strict'; 
-	log('-=> TrackerJacker v'+version+' <=-');
+	TrackerJacker.checkVersion();
 	TrackerJacker.init(); 
 	TrackerJacker.registerAPI();
 });

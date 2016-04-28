@@ -1,21 +1,5 @@
 /**
- * trackerjacker.js
- *
- * * Copyright 2015: Ken L.
- * Licensed under the GPL Version 3 license.
- * http://www.gnu.org/licenses/gpl.html
- * 
- * This script is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- * 
- * This script is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- * 
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * TrackerJacker.js
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * 
  * The goal of this script is to be an iniative tracker, that manages statuses,
@@ -41,16 +25,12 @@
  * of all effects in the event of API connection failure.
  * 
  * 7. It should be lightweight with a minimal amount of passed messages.
- * 
- * 
- * 
- * 
  */
  
 var TrackerJacker = (function() {
 	'use strict'; 
-	var version = 1.081,
-		author = 'Ken L.',
+	var version = 1.082,
+		author = 'Ken L.;d-reason',
 		pending = null;
 	
 	var TJ_StateEnum = Object.freeze({

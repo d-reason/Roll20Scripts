@@ -27,7 +27,7 @@
  */
  
 var TrackerJacker = TrackerJacker || (function() {
-	'use strict'; 
+    'use strict'; 
 	var version = 1.082,
 		author = 'Ken L.;d-reason',
 		pending = null;
@@ -278,6 +278,7 @@ var TrackerJacker = TrackerJacker || (function() {
 			{state.trackerjacker.statuses = [];}
 		if (!state.trackerjacker.favs)
 			{state.trackerjacker.favs = {};}
+        log('-=> TrackerJacker v'+version+' <=-');
 	}; 
 	
 	/**

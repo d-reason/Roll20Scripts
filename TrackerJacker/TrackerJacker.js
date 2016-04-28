@@ -918,8 +918,12 @@ var TrackerJacker = (function() {
 			name, 
 			player,
 			controllers = getTokenControllers(curToken);  
+			
+	if (curToken.get('showplayers_name')) { //Rest of functionality is commented now because I don't see any reason this might be benefitial
+		name = curToken.get('name');
+		} else {name = 'Creature'; }
 
-		if ((journal = getObj('character',curToken.get('represents')))) {
+	/*	if ((journal = getObj('character',curToken.get('represents')))) {
 			name = characterObjExists('name','attribute',journal.get('_id')); 
 			if (name) 
 				{name = name.get('current');}
@@ -929,7 +933,7 @@ var TrackerJacker = (function() {
 				{name = journal.get('name');}
 		} else if (curToken.get('showplayers_name')) {
 			name = curToken.get('name');
-		}
+		}*/
 		
 		content += '<div style="background-color: '+design.turncolor+'; font-weight: bold; font-style: italic; border: 2px solid #000; box-shadow: rgba(0,0,0,0.4) 3px 3px; border-radius: 0.5em; text-align: center; min-height: 50px;">'
 				+ '<table width="100%">'

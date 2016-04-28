@@ -31,7 +31,10 @@ var TrackerJacker = (function() {
 	var version = 1.082,
 		author = 'Ken L.;d-reason',
 		pending = null;
-	
+		
+	checkVersion = function() {    
+        log('-=> TrackerJacker v'+version+' <=-');}
+        
 	var TJ_StateEnum = Object.freeze({
 		ACTIVE: 0,
 		PAUSED: 1,
@@ -3012,8 +3015,7 @@ var TrackerJacker = (function() {
 		init: init,
 		registerAPI: registerAPI
 	};
-	 checkVersion = function() {    
-        log('-=> TrackerJacker v'+version+' <=-');}
+	
  
 }());
 

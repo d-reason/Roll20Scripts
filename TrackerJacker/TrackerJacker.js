@@ -39,9 +39,6 @@ var TrackerJacker = TrackerJacker || (function() {
 		FROZEN: 3
 	});
 	
-	checkVersion = function() {    
-        log('-=> TrackerJacker v'+version+' <=-');};
-	
 	var PR_Enum = Object.freeze({
 		YESNO: 'YESNO',
 		CUSTOM: 'CUSTOM',
@@ -3023,5 +3020,4 @@ on("ready", function() {
 	'use strict'; 
 	TrackerJacker.init(); 
 	TrackerJacker.registerAPI();
-	TrackerJacker.checkVersion();
 });

@@ -26,22 +26,22 @@
  * 7. It should be lightweight with a minimal amount of passed messages.
  */
  
-var TrackerJacker = (function() {
+var TrackerJacker = TrackerJacker || (function() {
 	'use strict'; 
 	var version = 1.082,
 		author = 'Ken L.;d-reason',
 		pending = null;
 		
-	checkVersion = function() {    
-        log('-=> TrackerJacker v'+version+' <=-');}
-        
 	var TJ_StateEnum = Object.freeze({
 		ACTIVE: 0,
 		PAUSED: 1,
 		STOPPED: 2,
 		FROZEN: 3
 	});
-
+	
+	checkVersion = function() {    
+        log('-=> TrackerJacker v'+version+' <=-');};
+	
 	var PR_Enum = Object.freeze({
 		YESNO: 'YESNO',
 		CUSTOM: 'CUSTOM',

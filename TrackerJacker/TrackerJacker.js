@@ -3017,6 +3017,7 @@ var TrackerJacker = (function() {
 
 on("ready", function() {
 	'use strict'; 
+	log('-=> TrackerJacker v'+version+' <=-');
 	TrackerJacker.init(); 
 	TrackerJacker.registerAPI();
 });

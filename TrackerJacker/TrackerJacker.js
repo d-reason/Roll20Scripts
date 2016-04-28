@@ -3021,7 +3021,7 @@ var TrackerJacker = TrackerJacker || (function() {
 
 on("ready", function() {
 	'use strict'; 
-	TrackerJacker.checkVersion();
 	TrackerJacker.init(); 
 	TrackerJacker.registerAPI();
+	TrackerJacker.checkVersion();
 });

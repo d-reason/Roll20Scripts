@@ -1,5 +1,4 @@
-/**
- * TrackerJacker.js
+/* TrackerJacker.js
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * 
  * The goal of this script is to be an iniative tracker, that manages statuses,
